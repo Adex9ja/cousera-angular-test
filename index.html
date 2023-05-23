@@ -5,9 +5,22 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adeoluwa</title>
-</head>
-<body>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+
+    <title>My first Angular Project</title>
+</head>
+<body ng-app="NameCalculator">
+
+    <div ng-controller="NameCalculatorController">
+        <div>
+            Your name is
+            <input type="text" ng-model="name" ng-keyup="displayNumeric()">
+        </div>
+        <div>
+            Total Numeric value of person name is: {{totalValue}}
+        </div>
+    </div>
 </body>
 </html>
